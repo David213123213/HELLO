@@ -1,0 +1,40 @@
+import java.util.Scanner;
+ 
+public class Program2 {
+	private static Scanner scan;
+
+	public static void main(String[] args) {
+
+		scan = new Scanner(System.in);
+		System.out.print("Введите первое число: ");
+		int num1 = scan.nextInt();
+		System.out.print("Введите второе число: ");
+		int num2 = scan.nextInt();
+		int summ = num1 + num2;
+        System.out.println("Результат:" + summ);
+        
+        scan = new Scanner(System.in);
+		System.out.print("Введите первое число: ");
+		int num3 = scan.nextInt();
+		System.out.print("Введите второе число: ");
+		int num4 = scan.nextInt();
+		int summ2 = num3 - num4;
+		System.out.print("Результат" + summ2);
+		
+		scan = new Scanner(System.in);
+		System.out.print("Введите первое число: ");
+		int num5 = scan.nextInt();
+		System.out.print("Введите второе число: ");
+		int num6 = scan.nextInt();
+		int summ3 = num5 * num6;
+        System.out.println("Результат:" + summ3);
+        
+        scan = new Scanner(System.in);
+		System.out.print("Введите первое число: ");
+		Float num7 = (float) scan.nextInt();
+		System.out.print("Введите второе число: ");
+		float num8 = scan.nextInt();
+		Float summ4 = num7 / num8;
+        System.out.println("Результат:" + summ4);
+	}
+}
