@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Programm {
+	public static void main (String[] args) {
+
+		Scanner k = new Scanner(System.in);
+		System.out.print("Введите число: ");
+		int num1 = k.nextInt();
+		System.out.print("Введите число: ");
+		int num2 = k.nextInt();
+		if (num1 == num2) {
+			System.out.print(num1 + "Равно" + num2);
+		}
+		if (num1 != num2) {
+			System.out.print(num1 + "Не равно" + num2); 
+		}
+	}
+}
