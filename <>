@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+	public class gbo {
+		public static void main (String[] args) {
+
+			Scanner k = new Scanner(System.in);
+			System.out.print("Введите число: ");
+			int num1 = k.nextInt();
+			System.out.print("Введите число: ");
+			int num2 = k.nextInt();
+			System.out.print("Введите число: ");
+			int num3 = k.nextInt();
+			if (num1 < num2 & num1 < num3) {
+				System.out.print("меньшее: " + num1);
+			}
+			else if (num1 < num2 & num1 < num3) {
+				System.out.print("меньшее: " + num2);
+			}
+			else 
+				System.out.print("меньшее" + num3);
+		}
+	}
