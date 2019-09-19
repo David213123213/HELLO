@@ -4,7 +4,7 @@ public class Programm {
 	public static void main (String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Введите число: ");
+		System.out.print("Введите день недели: ");
 		String day = scanner.nextLine();
 		switch (day){
 		case "понедельник" : 
