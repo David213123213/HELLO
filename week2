@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Programm {
+	public static void main (String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Введите число: ");
+		String day = scanner.nextLine();
+		switch (day){
+		case "понедельник" : 
+				System.out.print("1");
+		break;
+		case "вторник" : 
+				System.out.print("2");
+		break;
+		case "среда" :
+				System.out.print("3");
+		break;
+		case "четверг" : 
+				System.out.print("4");
+		break;
+		case "пятница" : 
+				System.out.print("5");
+		break;
+		case "суббота" : 
+				System.out.print("6");
+		break;
+		case "воскресенье" :
+				System.out.print("7");
+		break;
+		default : 
+				System.out.print("НЕТ");
+		
+		}
+		
+		}
+	}
