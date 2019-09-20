@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Programm {
+	public static void main (String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = 0;
+		int a = (int) (Math.random()*9);
+		int b = (int) (Math.random()*9);
+		int summ = (a) * (b);
+		System.out.print(a);
+		System.out.print(b);
+		System.out.print("число");
+		int num = scanner.nextInt();
+		System.out.print((a) * (b) == num);
+		System.out.print("результат"  + summ);
+		if (summ == num) {
+			System.out.print(n + 1);
+		}
+		
+	    
+	    
+	    	
+	    		
+	    	}
+	}
