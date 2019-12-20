@@ -1,0 +1,23 @@
+public class sorm {
+	public static void main(String[] args) {
+		int[] a = {5, 3, 4, 1, 2};
+		
+			
+		int  out, in, min;	
+		for(out = 0; out < a.length; out++ ) {
+			min = out;
+			for(in = out + 1; in < a.length; in++) {
+				if(a[in]< a[min]){
+				min = in;
+				}
+			}
+			int temp = a[min];
+			a[min] = a[out];
+			a[out] = temp;
+			}
+			for(int num : a) {
+				System.out.println(num + ",");
+
+			}
+	}
+}
