@@ -1,0 +1,36 @@
+package lort;
+import java.util.Scanner;
+
+
+public class My {
+	public static void main(String[] args) {
+		class ty{
+			
+			private int pass= 213213;
+	
+		}
+		ty lot = new ty();
+		lot.pass = 213213;
+		Scanner scan = new Scanner(System.in);
+		boolean count;
+		do {
+			System.out.print("Введите пароль:");
+			int check = scan.nextInt();
+			
+		
+			
+			if (check == lot.pass){
+				System.out.print("Ok");
+				count = false;	
+			}else {
+				System.out.print("no"+ '\n');
+				count= true;
+			}
+			
+		}while(count == true);
+		
+		}
+		
+	}
+
+	
