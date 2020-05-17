@@ -1,0 +1,97 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+int mas[3][3]{ 
+{0, 0, 0},
+{0, 0, 0}, 
+{0, 0, 0} 
+};
+int p1 = 0; 
+int p2 = 0;
+long int c1 = 0;
+long int c2 = 0;
+
+
+void first() {
+	cout << "Ход первого игрока:" << endl;
+	cin >> p1 >> p2;
+	mas[p1][p2] = 1;
+}
+void second() {
+	cout << "Ход второго игрока:" << endl;
+	c1 = rand() % 4;
+	c2 = rand() % 4;
+	mas[c1][c2] = 2;
+}
+
+void esli1() {
+	//Игрок №1
+	if (mas[0][0] = 1 && mas[0][1] == 1 && mas[0][2] == 1) {
+		cout << "Игрок номер №1 победил" << endl;
+		system("pause");
+	}
+	if (mas[1][0] = 1 && mas[1][1] == 1 && mas[1][2] == 1) {
+		cout << "Игрок номер №1 победил" << endl;
+		system("pause");
+	}
+	if (mas[2][0] = 1 && mas[2][1] == 1 && mas[2][2] == 1) {
+		cout << "Игрок номер №1 победил" << endl;
+		system("pause");
+	}
+	//по диагонали
+	if (mas[0][0] = 2 && mas[1][1] == 2 && mas[2][2] == 2) {
+		cout << "Игрок номер №1 победил" << endl;
+		system("pause");
+	}
+	if (mas[0][2] = 2 && mas[1][1] == 2 && mas[2][0] == 2) {
+		cout << "Игрок номер №1 победил" << endl;
+		system("pause");
+	}
+	
+}
+void esli2() {
+	//Игрок №2
+	if (mas[0][0] = 2 && mas[0][1] == 2 && mas[0][2] == 2) {
+		cout << "Игрок номер №2 победил" << endl;
+		system("pause");
+	}
+	if (mas[1][0] = 2 && mas[1][1] == 2 && mas[1][2] == 2) {
+		cout << "Игрок номер №2 победил" << endl;
+		system("pause");
+	}
+	if (mas[2][0] = 2 && mas[2][1] == 2 && mas[2][2] == 2) {
+		cout << "Игрок номер №2 победил" << endl;
+		system("pause");
+	}
+	//по диагонали
+	if (mas[0][0] = 2 && mas[1][1] == 2 && mas[2][2] == 2) {
+		cout << "Игрок номер №2 победил" << endl;
+		system("pause");
+	}
+	if (mas[0][2] = 2 && mas[1][1] == 2 && mas[2][0] == 2) {
+		cout << "Игрок номер №2 победил" << endl;
+	}
+}
+void pole() {
+	for (int i = 0; i <= 2; i++) {
+		for (int j = 0; j <= 2; j++) {
+			cout << mas[i][j];
+		}
+		cout << endl;
+	}
+}
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+
+	while(true) {
+		
+		first();
+		pole();
+		esli1();
+		second();
+		pole();
+		esli2();
+		
+	}
+}
